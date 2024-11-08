@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sistema de Cadastro de Monitores</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Sistema de Cadastro de Monitores</h1>
+      <nav>
+        <button id="showRegistrationForm">Cadastrar Monitor</button>
+        <button id="showMonitorList">Lista de Monitores</button>
+      </nav>
+    </header>
+
+    <main>
+      <section id="registrationForm" class="hidden">
+        <h2>Cadastro de Monitor</h2>
+        <form id="monitorForm">
+          <input type="hidden" id="monitorId" />
+          <label for="name">Nome:</label>
+          <input type="text" id="name" required />
+
+          <label for="discipline">Disciplina:</label>
+          <input type="text" id="discipline" required />
+
+          <label for="subjects"
+            >Matérias que pode ajudar (separadas por vírgula):</label
+          >
+          <input type="text" id="subjects" required />
+
+          <label for="schedule">Horários:</label>
+          <input type="text" id="schedule" required />
+
+          <label for="contact">Número de WhatsApp:</label>
+          <input
+            type="tel"
+            id="contact"
+            required
+            pattern="[0-9]{11}"
+            placeholder="11999999999"
+          />
+
+          <button type="submit" id="submitButton">Cadastrar</button>
+          <button type="button" id="cancelEdit" class="hidden">
+            Cancelar Edição
+          </button>
+        </form>
+      </section>
+
+      <section id="monitorList" class="hidden">
+        <h2>Lista de Monitores</h2>
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Buscar por disciplina..."
+        />
+        <ul id="monitorListItems"></ul>
+      </section>
+
+      <section id="contactForm" class="hidden">
+        <h2>Formulário de Contato</h2>
+        <form id="contactMonitorForm">
+          <label for="studentName">Seu Nome:</label>
+          <input type="text" id="studentName" required />
+
+          <label for="message">Mensagem:</label>
+          <textarea id="message" required></textarea>
+
+          <input type="hidden" id="contactMonitorId" />
+
+          <button type="submit">Enviar Mensagem via WhatsApp</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; Sistema de Cadastro de Monitores.</p>
+    </footer>
+
+    <div id="notification" class="hidden"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
