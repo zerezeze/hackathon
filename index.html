@@ -4,10 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sistema de Cadastro de Monitores</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -30,37 +27,23 @@
           <label for="discipline">Disciplina:</label>
           <input type="text" id="discipline" required />
 
-          <label for="subjects"
-            >Matérias que pode ajudar (separadas por vírgula):</label
-          >
+          <label for="subjects">Matérias que pode ajudar (separadas por vírgula):</label>
           <input type="text" id="subjects" required />
 
           <label for="schedule">Horários:</label>
           <input type="text" id="schedule" required />
 
           <label for="contact">Número de WhatsApp:</label>
-          <input
-            type="tel"
-            id="contact"
-            required
-            pattern="[0-9]{11}"
-            placeholder="11999999999"
-          />
+          <input type="tel" id="contact" required pattern="[0-9]{11}" placeholder="11999999999" />
 
           <button type="submit" id="submitButton">Cadastrar</button>
-          <button type="button" id="cancelEdit" class="hidden">
-            Cancelar Edição
-          </button>
+          <button type="button" id="cancelEdit" class="hidden">Cancelar Edição</button>
         </form>
       </section>
 
-      <section id="monitorList" class="hidden">
+      <section id="monitorList" class="hidden" style="margin-bottom: 20px">
         <h2>Lista de Monitores</h2>
-        <input
-          type="text"
-          id="searchInput"
-          placeholder="Buscar por disciplina..."
-        />
+        <input type="text" tyle="margin-bottom: 40px" id="searchInput" placeholder="Buscar por disciplina..." />
         <ul id="monitorListItems"></ul>
       </section>
 
@@ -80,7 +63,7 @@
       </section>
     </main>
 
-    <footer>
+    <footer style="text-align: center">
       <p>&copy; Sistema de Cadastro de Monitores.</p>
     </footer>
 
