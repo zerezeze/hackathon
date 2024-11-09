@@ -16,6 +16,9 @@
 ---
 
 ## 💡 Sobre o Projeto
+
+https://zerezeze.github.io/hackathon-unic/
+
 O **Sistema de Cadastro de Monitores Universitários** foi criado durante o primeiro Hackathon da UniC, com foco na criação de uma plataforma prática e acessível para o cadastro e gerenciamento de monitores. O projeto é responsivo, garantindo uma experiência de uso consistente em diferentes dispositivos.
 
 ## 🚀 Tecnologias Utilizadas
